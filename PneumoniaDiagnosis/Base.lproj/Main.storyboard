@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="anf-dy-3Cj">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PneumoniaDiagnosis" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CtF-2C-foM">
+                                <rect key="frame" x="10" y="98" width="394" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="uvH-zf-f9r"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Upload Your Chest X-ray">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="26" name="AmericanTypewriter-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homepage" translatesAutoresizingMaskIntoConstraints="NO" id="Kia-5D-8Hf">
+                                <rect key="frame" x="0.0" y="208" width="414" height="350"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="Lcb-4f-O3w"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMg-Wq-UIU">
+                                <rect key="frame" x="0.0" y="608" width="414" height="204"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">    ** Required ~                                                                     1.) Only  JPEG ,PNG .                                                                                                                                                                                                                 2.) This application does not Gurantee 100% accuracy for the Diagonse </string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="17" name="AmericanTypewriter-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.85098039215686272" green="0.92549019607843142" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Kia-5D-8Hf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="IZJ-Oo-QK2"/>
+                            <constraint firstItem="mMg-Wq-UIU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="J1x-zN-0s4"/>
+                            <constraint firstItem="mMg-Wq-UIU" firstAttribute="top" secondItem="Kia-5D-8Hf" secondAttribute="bottom" constant="50" id="RxQ-cP-Pog"/>
+                            <constraint firstItem="CtF-2C-foM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Ykt-gb-U7F"/>
+                            <constraint firstItem="Kia-5D-8Hf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Zcb-Jk-acz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mMg-Wq-UIU" secondAttribute="bottom" constant="50" id="Zkq-ik-7Kg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CtF-2C-foM" secondAttribute="trailing" constant="10" id="h9B-oO-ibl"/>
+                            <constraint firstItem="mMg-Wq-UIU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kdY-pG-GKR"/>
+                            <constraint firstItem="CtF-2C-foM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="qQ3-mI-kns"/>
+                            <constraint firstItem="Kia-5D-8Hf" firstAttribute="top" secondItem="CtF-2C-foM" secondAttribute="bottom" constant="10" id="ygu-H8-l7H"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="QVd-Vb-DyD">
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="Oca-e7-en9">
+                            <connections>
+                                <action selector="cameratapped:" destination="BYZ-38-t0r" id="dRk-pL-Vj0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageCapture" destination="Kia-5D-8Hf" id="Ee1-aC-Cn4"/>
+                        <outlet property="infoLabel" destination="mMg-Wq-UIU" id="1qb-px-feX"/>
+                        <outlet property="titleLabel" destination="CtF-2C-foM" id="kDQ-iB-y7e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="975" y="90"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GPE-Gj-CUs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="anf-dy-3Cj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hsL-uK-JwG">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="usc-0U-JFs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EbA-Kz-WMU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="226" y="100"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="homepage" width="600" height="500"/>
+    </resources>
+</document>
